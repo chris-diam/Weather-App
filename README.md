@@ -14,6 +14,11 @@ A weather app that gets user location and fetches the current weather from the o
 - [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 - [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
+## NPM Packages
+- Express
+- Hbs
+- Request
+
 ## Getting Started
 
 ### Installation instructions
