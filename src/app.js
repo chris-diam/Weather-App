@@ -83,48 +83,6 @@ app.get('/weather', (req,res) => {
             
           })
     })
-
-
-
-    // res.send([
-    //     {
-    //         location: "Serres",
-    //         forecast: "It is sunny",
-    //         address: req.query.address
-    //     }
-    // ])
-})
-
-
-
-
-app.get('/products', (req, res) => {
-    if(!req.query.search) {
-       return res.send({
-            error: 'You must provide a search term'
-        })
-    }
-
-    console.log(req.query.search)
-    res.send({
-        products: []
-    })
-})
-
-app.get('/help/*', (req, res) => {
-    res.render('404',{
-        title: '404',
-        name: 'Christos Diamantakis',
-        errorMessage: 'Help article not found.'
-    })
-})
-
-app.get('*', (req, res) => {
-    res.render('404',{
-        title: '404',
-        name: 'Christos Diamantakis',
-        errorMessage: 'Page not found.'
-    })
 })
 
 app.listen(port, () => {
